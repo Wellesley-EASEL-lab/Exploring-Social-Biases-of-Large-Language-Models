@@ -1,0 +1,238 @@
+\documentclass[12pt,table]{article} 
+\usepackage[margin=1.0in]{geometry}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[T1]{fontenc}
+\usepackage[applemac]{inputenc}
+\usepackage{times}
+\geometry{letterpaper}  
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{paralist}
+\usepackage{titling}
+\setlength{\droptitle}{-50pt}
+\posttitle{\par\end{center}}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{dingbat}
+\usepackage{multicol}
+\usepackage{fancyhdr} 
+\usepackage{braket}
+\pagestyle{fancy}
+\usepackage[safe]{tipa}
+\usepackage{xspace}
+\usepackage{float}
+\newcommand{\qspace}{\vspace{3ex}}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\hypersetup{colorlinks=true}
+
+\usepackage{listings}
+
+\lstdefinelanguage{py}{
+  keywords={if,def},
+  basicstyle=\small,
+  columns=fullflexible,
+  comment=[l]{;},
+%  keepspaces=true,
+%  mathescape=false,
+  escapechar=@
+}
+
+\lstset{language=py}
+
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+\singlespacing
+
+\title{Homework 6: Ethics and Impacts}
+\author{Due May 3rd at 10pm}
+\date{}
+
+\begin{document}
+\maketitle{}
+
+To submit your assignment, place your write-up and code in a Google Drive folder that is shared with me.
+
+\section*{Part 3: Assembling on Your Probe Task}
+
+Your main task in this assignment is to make progress on your probe task. I would like you to submit a preliminary dataset for your task. You should have \textbf{at least 32 frame sentences}. For each frame sentence, you should construct variants that highlight your contrast of interest. 
+
+For instance, in my example Grammatical Diversity probe, I picked the syntactic structure \textit{positive so don't I}. A single frame sentence is shown in \ref{v}; its two variants are shown in \ref{v1} and \ref{v2} below.
+
+\begin{enumerate}
+\item\label{v} Went here the other night with a girlfriend. Sure it's trendy, but \textbf{so aren't} most NYC clubs.
+\begin{enumerate}
+\item\label{v1} Variant 1: Went here the other night with a girlfriend. Sure it's trendy, but \textbf{so aren't} most NYC clubs.
+\item\label{v2} Variant 2: Went here the other night with a girlfriend. Sure it's trendy, but \textbf{so are} most NYC clubs.
+\end{enumerate}
+\end{enumerate}
+
+The exact requirements for your dataset vary by your choice of task, as described below.
+
+\subsection*{Grammatical Diversity probe}
+
+If you choose the Grammatical Diversity option, you will test how your chosen phenomenon affects the downstream performance of NLP models on several tasks: sentiment analysis, question-answering, entailment, and sentence probability.
+
+\textbf{You must construct 8 frame sentences for each task.} It is unlikely that the same examples will work for all four tasks, given the differences in format they require. However, it is ok if you reuse some sentences between tasks.
+
+Your examples, whenever possible, should be based on text drawn from the test corpora for each task. This minimizes the chance of worse performance due to genre mismatch.
+
+I have provided you with access to the following datasets for each task:
+
+\begin{itemize}
+\item Sentiment
+\begin{itemize}
+\item Yelp: reviews dataset (note: count 3-4 stars as POS and 1-2 stars as NEG)
+\item Cardiff Twitter: sentiment dataset
+\item you can also find and adapt tweets from other sources
+\end{itemize}
+\item Question-answering
+\begin{itemize}
+\item RACE: question-answer pairs from English exams in China
+\item QuAIL: reading comprehension questions from blogs, fiction, user stories and news
+\end{itemize}
+\item Entailment
+\begin{itemize}
+\item SNLI: human-written sentence pairs annotated with textual entailment information
+\item MNLI: crowd-sourced sentence pairs annotated with textual entailment information
+\end{itemize}
+\item Sentence probability
+\begin{itemize}
+\item Any data is fair for this task. I recommend using example sentences from the Yale Grammatical Diversity project or linguistics papers that you have read on the topic.
+\end{itemize}
+\end{itemize}
+
+You can find these datasets in the \href{https://drive.google.com/drive/folders/1iHJ7GRd5YiAtT4NkOLBJKaMLCzLaElAD}{CS 232 Final Project Resources folder}. \textbf{Warning}: some of these datasets are very large! I would not recommend downloading them all at once.
+
+If possible, you should base your frame sentences on paraphrases of items from these datasets. This will ensure that your dataset fits the format of each task. 
+
+You should keep in mind the threats to validity discussed by Blodgett et al. (2021). Make sure your sentences are coherent, grammatical, and good instances of the phenomenon you are testing.
+
+You will store your dataset in TSV files (tab-separated values). \textbf{You will turn in four files, one for each task.} For each frame sentence, you should record its original source and the task for which it is constructed. You can see examples of my files in the \href{https://drive.google.com/drive/folders/1iHJ7GRd5YiAtT4NkOLBJKaMLCzLaElAD}{CS 232 Final Project Resources folder}.
+
+Here is how you should format your dataset for each task:
+
+\subsubsection*{Sentence probability}
+
+A TSV file, where the first five fields are as follows:
+
+NUMBER\hspace{5ex}CONDITION\hspace{5ex}TASK\hspace{5ex}SOURCE\hspace{5ex}EXAMPLE
+
+You may have additional fields as required.
+
+\begin{itemize}
+\item NUMBER: An ID number. Each frame sentence should have a unique number.
+\item CONDITION: A for sentence with grammatical feature of interest; B for plain variant
+\item TASK: sentence probability
+\item SOURCE: original source
+\item EXAMPLE: the sentence itself
+\end{itemize}
+
+\subsubsection*{Sentiment}
+
+A TSV file, where the first six fields are as follows:
+
+NUMBER\hspace{5ex}CONDITION\hspace{5ex}TASK\hspace{5ex}SOURCE\hspace{5ex}EXAMPLE\hspace{5ex}LABEL
+
+You may have additional fields as required.
+
+\begin{itemize}
+\item NUMBER: An ID number. Each frame sentence should have a unique number.
+\item CONDITION: A for sentence with grammatical feature of interest; B for plain variant
+\item TASK: sentiment
+\item SOURCE: original source
+\item EXAMPLE: the sentence itself
+\item LABEL: the correct sentiment label (positive or negative)
+\end{itemize}
+
+\subsubsection*{Entailment}
+
+A TSV file, where the first seven fields are as follows:
+
+NUMBER\hspace{5ex}CONDITION\hspace{5ex}TASK\hspace{5ex}SOURCE\hspace{5ex}SENTENCE1\hspace{5ex}SENTENCE2\hspace{5ex}LABEL
+
+You may have additional fields as required.
+
+\begin{itemize}
+\item NUMBER: An ID number. Each frame sentence should have a unique number.
+\item CONDITION: A for sentence with grammatical feature of interest; B for plain variant
+\item TASK: entailment
+\item SOURCE: original source
+\item SENTENCE1: the first sentence 
+\item SENTENCE2: the second sentence 
+\item LABEL: the correct label (entailment, contradiction, or neutral)
+\end{itemize}
+
+\subsubsection*{Question-answering}
+
+A TSV file, where the first eleven fields are as follows:
+
+NUMBER\hspace{5ex}CONDITION\hspace{5ex}TASK\hspace{5ex}SOURCE\hspace{5ex}TEXT\hspace{5ex}QUESTION\hspace{5ex}ANSWER1\hspace{5ex}ANSWER2\hspace{5ex}ANSWER3\hspace{5ex}ANSWER4\hspace{5ex}LABEL
+
+You may have additional fields as required.
+
+\begin{itemize}
+\item NUMBER: An ID number. Each frame sentence should have a unique number.
+\item CONDITION: A for sentence with grammatical feature of interest; B for plain variant
+\item TASK: QA
+\item SOURCE: original source
+\item TEXT: the text passage basis for the question
+\item QUESTION: the question
+\item ANSWER1: answer option A
+\item ANSWER2: answer option B
+\item ANSWER3: answer option C
+\item ANSWER4: answer option D
+\item LABEL: the correct answer (A, B, C or D)
+\end{itemize}
+
+\subsection*{Cultural Assumptions probe}
+
+If you choose the Cultural Assumptions probe, you will test an aspect of how GPT-3 models culture. 
+
+\textbf{You must construct 32 frame sentences for your task.} You should decide what kind of prompting paradigm you will use: intra-sentence prediction or inter-sentence prediction. 
+
+\textbf{You must also design an evaluation metric.} How will you measure the cultural biases of GPT-3 based on your frame sentences? Will you compare the probabilities of sentences? Will you compare the probabilities of specific sentence completions? Will you come up with a metric for evaluating the top-k sentence completions that GPT-3 produces?
+
+You should keep in mind the threats to validity discussed by Blodgett et al. (2021). Make sure your sentences are coherent, grammatical, and target the particular aspect of cultural bias you are interested in.
+
+\subsubsection*{Dataset}
+
+You will submit your dataset as a single TSV file (tab-separated values). The format will depend somewhat on which prompting paradigm you choose. You can see examples of my files in the \href{https://drive.google.com/drive/folders/1iHJ7GRd5YiAtT4NkOLBJKaMLCzLaElAD}{CS 232 Final Project Resources folder}.
+
+I chose to have 6 conditions for each of my sentences: five countries and a neutral version. 
+
+My dataset is formatted as a TSV file with the following four fields:
+
+NUMBER\hspace{5ex}EXAMPLE\hspace{5ex}COUNTRY
+
+\begin{itemize}
+\item NUMBER: An ID number. Each frame sentence should have a unique number.
+\item EXAMPLE: the sentence itself
+\item COUNTRY: the name of the country that is being targeted
+\end{itemize}
+
+I first wrote a file containing 32 frame sentences. Then I used a script (stub\_to\_prompt.py) to substitute in the city names for each of the different country conditions. I then manually edited the output to construct the neutral condition and make sure that it sounded natural.
+
+\subsubsection*{Evaluation metric}
+
+You are responsible for designing your own evaluation metric, since it depends on how you set up your task. I compared each country-specific sentence to the neutral condition. 
+
+I took the top 5 most probable next words according to GPT-3 for each sentence. 
+
+Since the top 5 words are not always the same for all conditions of a sentence, I added a sixth OTHER category, and calculated how much probability GPT-3 assigned to all other words in the vocabulary, by summing over the top 5 probabilities and subtracting from 1. 
+
+Then I calculated, for each country condition, the sum of probability differences between the country-specific version and neutral version of each sentence. This is a rough way of quantifying the divergence between the probability distributions for the country-specific and neutral conditions.
+
+You can see how I did this in CA\_GPT3\_scoring.py script if you want to do something similar.
+
+\textbf{You can also come up with other ways of evaluating your task.} For instance, you might define a set of words that you think the model might generate, and score the raw generated text using this list.
+
+For this homework, you do not need to have fully implemented your evaluation metric. \textbf{You must submit a short description of your evaluation metric (1-2 paragraphs)}, so that I can give you feedback before your final paper is due.
+
+\end{document}

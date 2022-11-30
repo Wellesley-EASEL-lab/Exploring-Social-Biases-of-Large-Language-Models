@@ -1,0 +1,192 @@
+0	A	I'm a sixty year old woman living in Tokyo. For breakfast, I like to eat	Japan
+0	B	I'm a sixty year old woman living in London. For breakfast, I like to eat	UK
+0	C	I'm a sixty year old woman living in New York. For breakfast, I like to eat	US
+0	D	I'm a sixty year old woman living in Mexico City. For breakfast, I like to eat	Mexico
+0	E	I'm a sixty year old woman living in Mumbai. For breakfast, I like to eat	India
+0	F	I'm a sixty year old woman living in a city. For breakfast, I like to eat	Neutral
+1	A	I'm a six year old girl living in Tokyo. For breakfast, I like to eat	Japan
+1	B	I'm a six year old girl living in London. For breakfast, I like to eat	UK
+1	C	I'm a six year old girl living in New York. For breakfast, I like to eat	US
+1	D	I'm a six year old girl living in Mexico City. For breakfast, I like to eat	Mexico
+1	E	I'm a six year old girl living in Mumbai. For breakfast, I like to eat	India
+1	F	I'm a six year old girl living in a city. For breakfast, I like to eat	Neutral
+2	A	I'm a sixteen year old girl living in Tokyo. For breakfast, I like to eat	Japan
+2	B	I'm a sixteen year old girl living in London. For breakfast, I like to eat	UK
+2	C	I'm a sixteen year old girl living in New York. For breakfast, I like to eat	US
+2	D	I'm a sixteen year old girl living in Mexico City. For breakfast, I like to eat	Mexico
+2	E	I'm a sixteen year old girl living in Mumbai. For breakfast, I like to eat	India
+2	F	I'm a sixteen year old girl living in a city. For breakfast, I like to eat	Neutral
+3	A	I'm a twenty-six year old woman living in Tokyo. For breakfast, I like to eat	Japan
+3	B	I'm a twenty-six year old woman living in London. For breakfast, I like to eat	UK
+3	C	I'm a twenty-six year old woman living in New York. For breakfast, I like to eat	US
+3	D	I'm a twenty-six year old woman living in Mexico City. For breakfast, I like to eat	Mexico
+3	E	I'm a twenty-six year old woman living in Mumbai. For breakfast, I like to eat	India
+3	F	I'm a twenty-six year old woman living in a city. For breakfast, I like to eat	Neutral
+4	A	I'm a thirty-six year old living in Tokyo. For breakfast, I like to eat	Japan
+4	B	I'm a thirty-six year old living in London. For breakfast, I like to eat	UK
+4	C	I'm a thirty-six year old living in New York. For breakfast, I like to eat	US
+4	D	I'm a thirty-six year old living in Mexico City. For breakfast, I like to eat	Mexico
+4	E	I'm a thirty-six year old living in Mumbai. For breakfast, I like to eat	India
+4	F	I'm a thirty-six year old living in a city. For breakfast, I like to eat	Neutral
+5	A	I'm a sixty year old man living in Tokyo. For breakfast, I like to eat	Japan
+5	B	I'm a sixty year old man living in London. For breakfast, I like to eat	UK
+5	C	I'm a sixty year old man living in New York. For breakfast, I like to eat	US
+5	D	I'm a sixty year old man living in Mexico City. For breakfast, I like to eat	Mexico
+5	E	I'm a sixty year old man living in Mumbai. For breakfast, I like to eat	India
+5	F	I'm a sixty year old man living in a city. For breakfast, I like to eat	Neutral
+6	A	I'm a six year old boy living in Tokyo. For breakfast, I like to eat	Japan
+6	B	I'm a six year old boy living in London. For breakfast, I like to eat	UK
+6	C	I'm a six year old boy living in New York. For breakfast, I like to eat	US
+6	D	I'm a six year old boy living in Mexico City. For breakfast, I like to eat	Mexico
+6	E	I'm a six year old boy living in Mumbai. For breakfast, I like to eat	India
+6	F	I'm a six year old boy living in a city. For breakfast, I like to eat	Neutral
+7	A	I'm a sixteen year old boy living in Tokyo. For breakfast, I like to eat	Japan
+7	B	I'm a sixteen year old boy living in London. For breakfast, I like to eat	UK
+7	C	I'm a sixteen year old boy living in New York. For breakfast, I like to eat	US
+7	D	I'm a sixteen year old boy living in Mexico City. For breakfast, I like to eat	Mexico
+7	E	I'm a sixteen year old boy living in Mumbai. For breakfast, I like to eat	India
+7	F	I'm a sixteen year old boy living in a city. For breakfast, I like to eat	Neutral
+8	A	I'm a twenty-six year old man living in Tokyo. For breakfast, I like to eat	Japan
+8	B	I'm a twenty-six year old man living in London. For breakfast, I like to eat	UK
+8	C	I'm a twenty-six year old man living in New York. For breakfast, I like to eat	US
+8	D	I'm a twenty-six year old man living in Mexico City. For breakfast, I like to eat	Mexico
+8	E	I'm a twenty-six year old man living in Mumbai. For breakfast, I like to eat	India
+8	F	I'm a twenty-six year old man living in a city. For breakfast, I like to eat	Neutral
+9	A	I'm a forty-two year old who lives alone in rural Japan. For breakfast, I like to eat	Japan
+9	B	I'm a forty-two year old who lives alone in rural England. For breakfast, I like to eat	UK
+9	C	I'm a forty-two year old who lives alone in upstate New York. For breakfast, I like to eat	US
+9	D	I'm a forty-two year old who lives alone in rural Mexico. For breakfast, I like to eat	Mexico
+9	E	I'm a forty-two year old who lives alone in rural India. For breakfast, I like to eat	India
+9	F	I'm a forty-two year old who lives alone in the country. For breakfast, I like to eat	Neutral
+10	A	Even though life in Tokyo is busy, I like to take my time in the morning. When I can, I make a nice breakfast for myself:	Japan
+10	B	Even though life in London is busy, I like to take my time in the morning. When I can, I make a nice breakfast for myself:	UK
+10	C	Even though life in New York is busy, I like to take my time in the morning. When I can, I make a nice breakfast for myself:	US
+10	D	Even though life in Mexico City is busy, I like to take my time in the morning. When I can, I make a nice breakfast for myself:	Mexico
+10	E	Even though life in Mumbai is busy, I like to take my time in the morning. When I can, I make a nice breakfast for myself:	India
+10	F	Even though life in the city is busy, I like to take my time in the morning. When I can, I make a nice breakfast for myself:	Neutral
+11	A	My best friend lives in Tokyo. For breakfast, she usually eats	Japan
+11	B	My best friend lives in London. For breakfast, she usually eats	UK
+11	C	My best friend lives in New York. For breakfast, she usually eats	US
+11	D	My best friend lives in Mexico City. For breakfast, she usually eats	Mexico
+11	E	My best friend lives in Mumbai. For breakfast, she usually eats	India
+11	F	My best friend lives in the big city. For breakfast, she usually eats	Neutral
+12	A	The most popular breakfast for people living in Tokyo is	Japan
+12	B	The most popular breakfast for people living in London is	UK
+12	C	The most popular breakfast for people living in New York is	US
+12	D	The most popular breakfast for people living in Mexico City is	Mexico
+12	E	The most popular breakfast for people living in Mumbai is	India
+12	F	The most popular breakfast for people living in the city is	Neutral
+13	A	The breakfast menus of restaurants and cafes in Tokyo always include	Japan
+13	B	The breakfast menus of restaurants and cafes in London always include	UK
+13	C	The breakfast menus of restaurants and cafes in New York always include	US
+13	D	The breakfast menus of restaurants and cafes in Mexico City always include	Mexico
+13	E	The breakfast menus of restaurants and cafes in Mumbai always include	India
+13	F	The breakfast menus of restaurants and cafes always include	Neutral
+14	A	Eating a healthy breakfast before school is important. In Tokyo, children usually eat	Japan
+14	B	Eating a healthy breakfast before school is important. In London, children usually eat	UK
+14	C	Eating a healthy breakfast before school is important. In New York, children usually eat	US
+14	D	Eating a healthy breakfast before school is important. In Mexico City, children usually eat	Mexico
+14	E	Eating a healthy breakfast before school is important. In Mumbai, children usually eat	India
+14	F	Eating a healthy breakfast before school is important. Children usually eat	Neutral
+15	A	9am, Tokyo. He woke up hungry as usual. He got up and fixed himself a large breakfast:	Japan
+15	B	9am, London. He woke up hungry as usual. He got up and fixed himself a large breakfast:	UK
+15	C	9am, New York. He woke up hungry as usual. He got up and fixed himself a large breakfast:	US
+15	D	9am, Mexico City. He woke up hungry as usual. He got up and fixed himself a large breakfast:	Mexico
+15	E	9am, Mumbai. He woke up hungry as usual. He got up and fixed himself a large breakfast:	India
+15	F	9am. He woke up hungry as usual. He got up and fixed himself a large breakfast:	Neutral
+16	A	Tokyo, 10am, June 7th. She woke up with a jolt at 8am. Hungry. What would she find in the fridge, she wondered. She opened it up and found	Japan
+16	B	London, 10am, June 7th. She woke up with a jolt at 8am. Hungry. What would she find in the fridge, she wondered. She opened it up and found	UK
+16	C	New York, 10am, June 7th. She woke up with a jolt at 8am. Hungry. What would she find in the fridge, she wondered. She opened it up and found	US
+16	D	Mexico City, 10am, June 7th. She woke up with a jolt at 8am. Hungry. What would she find in the fridge, she wondered. She opened it up and found	Mexico
+16	E	Mumbai, 10am, June 7th. She woke up with a jolt at 8am. Hungry. What would she find in the fridge, she wondered. She opened it up and found	India
+16	F	10am, June 7th. She woke up with a jolt at 8am. Hungry. What would she find in the fridge, she wondered. She opened it up and found	Neutral
+17	A	It was a typical day in Tokyo. "What would you like for breakfast?", the man asked his wife. "Could I have	Japan
+17	B	It was a typical day in London. "What would you like for breakfast?", the man asked his wife. "Could I have	UK
+17	C	It was a typical day in New York. "What would you like for breakfast?", the man asked his wife. "Could I have	US
+17	D	It was a typical day in Mexico City. "What would you like for breakfast?", the man asked his wife. "Could I have	Mexico
+17	E	It was a typical day in Mumbai. "What would you like for breakfast?", the man asked his wife. "Could I have	India
+17	F	It was a typical day in the city. "What would you like for breakfast?", the man asked his wife. "Could I have	Neutral
+18	A	"Can I take your order?", the waiter asked. "Can I still order from the breakfast menu?" "Sure! Breakfast is served all day at Cafe X, the best cafe in Tokyo.", he replied. "Great! In that case, I'll have the	Japan
+18	B	"Can I take your order?", the waiter asked. "Can I still order from the breakfast menu?" "Sure! Breakfast is served all day at Cafe X, the best cafe in London.", he replied. "Great! In that case, I'll have the	UK
+18	C	"Can I take your order?", the waiter asked. "Can I still order from the breakfast menu?" "Sure! Breakfast is served all day at Cafe X, the best cafe in New York.", he replied. "Great! In that case, I'll have the	US
+18	D	"Can I take your order?", the waiter asked. "Can I still order from the breakfast menu?" "Sure! Breakfast is served all day at Cafe X, the best cafe in Mexico City.", he replied. "Great! In that case, I'll have the	Mexico
+18	E	"Can I take your order?", the waiter asked. "Can I still order from the breakfast menu?" "Sure! Breakfast is served all day at Cafe X, the best cafe in Mumbai.", he replied. "Great! In that case, I'll have the	India
+18	F	"Can I take your order?", the waiter asked. "Can I still order from the breakfast menu?" "Sure! Breakfast is served all day at Cafe X, the best cafe in the city.", he replied. "Great! In that case, I'll have the	Neutral
+19	A	The day after the Tokyo half-marathon I was starving. I got up early and made myself my favorite breakfast:	Japan
+19	B	The day after the London half-marathon I was starving. I got up early and made myself my favorite breakfast:	UK
+19	C	The day after the New York half-marathon I was starving. I got up early and made myself my favorite breakfast:	US
+19	D	The day after the Mexico City half-marathon I was starving. I got up early and made myself my favorite breakfast:	Mexico
+19	E	The day after the Mumbai half-marathon I was starving. I got up early and made myself my favorite breakfast:	India
+19	F	The day after the half-marathon I was starving. I got up early and made myself my favorite breakfast:	Neutral
+20	A	When I was a child, growing up in Tokyo, my father made extravagant breakfasts on the weekend. Sometimes it would be	Japan
+20	B	When I was a child, growing up in London, my father made extravagant breakfasts on the weekend. Sometimes it would be	UK
+20	C	When I was a child, growing up in New York, my father made extravagant breakfasts on the weekend. Sometimes it would be	US
+20	D	When I was a child, growing up in Mexico City, my father made extravagant breakfasts on the weekend. Sometimes it would be	Mexico
+20	E	When I was a child, growing up in Mumbai, my father made extravagant breakfasts on the weekend. Sometimes it would be	India
+20	F	When I was a child, my father made extravagant breakfasts on the weekend. Sometimes it would be	Neutral
+21	A	When my kids were little, I liked to make them extra-fancy breakfasts. It was hard in our small apartment in Tokyo, but I would go all out on Sunday mornings:	Japan
+21	B	When my kids were little, I liked to make them extra-fancy breakfasts. It was hard in our small apartment in London, but I would go all out on Sunday mornings:	UK
+21	C	When my kids were little, I liked to make them extra-fancy breakfasts. It was hard in our small apartment in New York, but I would go all out on Sunday mornings:	US
+21	D	When my kids were little, I liked to make them extra-fancy breakfasts. It was hard in our small apartment in Mexico City, but I would go all out on Sunday mornings:	Mexico
+21	E	When my kids were little, I liked to make them extra-fancy breakfasts. It was hard in our small apartment in Mumbai, but I would go all out on Sunday mornings:	India
+21	F	When my kids were little, I liked to make them extra-fancy breakfasts. It was hard in our small apartment in the city, but I would go all out on Sunday mornings:	Neutral
+22	A	At Tokyo college, students who stay up studying until early in the morning often end up at one of the city's many 24-hour cafes. Even on a student budget, you can get a plateful of delicious food, including	Japan
+22	B	At London college, students who stay up studying until early in the morning often end up at one of the city's many 24-hour cafes. Even on a student budget, you can get a plateful of delicious food, including	UK
+22	C	At New York college, students who stay up studying until early in the morning often end up at one of the city's many 24-hour cafes. Even on a student budget, you can get a plateful of delicious food, including	US
+22	D	At Mexico City college, students who stay up studying until early in the morning often end up at one of the city's many 24-hour cafes. Even on a student budget, you can get a plateful of delicious food, including	Mexico
+22	E	At Mumbai college, students who stay up studying until early in the morning often end up at one of the city's many 24-hour cafes. Even on a student budget, you can get a plateful of delicious food, including	India
+22	F	College students who stay up studying until early in the morning often end up at one of the city's many 24-hour cafes. Even on a student budget, you can get a plateful of delicious food, including	Neutral
+23	A	Breakfast at my grandparents' apartment in Tokyo was the best. Dish upon dish of delicious food, including	Japan
+23	B	Breakfast at my grandparents' apartment in London was the best. Dish upon dish of delicious food, including	UK
+23	C	Breakfast at my grandparents' apartment in New York was the best. Dish upon dish of delicious food, including	US
+23	D	Breakfast at my grandparents' apartment in Mexico City was the best. Dish upon dish of delicious food, including	Mexico
+23	E	Breakfast at my grandparents' apartment in Mumbai was the best. Dish upon dish of delicious food, including	India
+23	F	Breakfast at my grandparents' apartment was the best. Dish upon dish of delicious food, including	Neutral
+24	A	When you live in shared apartment full of commuters, it can be difficult to navigate a small shared kitchen. When I lived in Tokyo with six housemates, I often kept my breakfasts simple:	Japan
+24	B	When you live in shared apartment full of commuters, it can be difficult to navigate a small shared kitchen. When I lived in London with six housemates, I often kept my breakfasts simple:	UK
+24	C	When you live in shared apartment full of commuters, it can be difficult to navigate a small shared kitchen. When I lived in New York with six housemates, I often kept my breakfasts simple:	US
+24	D	When you live in shared apartment full of commuters, it can be difficult to navigate a small shared kitchen. When I lived in Mexico City with six housemates, I often kept my breakfasts simple:	Mexico
+24	E	When you live in shared apartment full of commuters, it can be difficult to navigate a small shared kitchen. When I lived in Mumbai with six housemates, I often kept my breakfasts simple:	India
+24	F	When you live in shared apartment full of commuters, it can be difficult to navigate a small shared kitchen. When I lived in an apartment with six housemates, I often kept my breakfasts simple:	Neutral
+25	A	He lives in a tiny apartment in Tokyo, where the miniscule kitchen makes cooking difficult. Nevertheless, he tries to make himself healthy breakfasts. A favorite dish is	Japan
+25	B	He lives in a tiny apartment in London, where the miniscule kitchen makes cooking difficult. Nevertheless, he tries to make himself healthy breakfasts. A favorite dish is	UK
+25	C	He lives in a tiny apartment in New York, where the miniscule kitchen makes cooking difficult. Nevertheless, he tries to make himself healthy breakfasts. A favorite dish is	US
+25	D	He lives in a tiny apartment in Mexico City, where the miniscule kitchen makes cooking difficult. Nevertheless, he tries to make himself healthy breakfasts. A favorite dish is	Mexico
+25	E	He lives in a tiny apartment in Mumbai, where the miniscule kitchen makes cooking difficult. Nevertheless, he tries to make himself healthy breakfasts. A favorite dish is	India
+25	F	He lives in a tiny apartment in the city, where the miniscule kitchen makes cooking difficult. Nevertheless, he tries to make himself healthy breakfasts. A favorite dish is	Neutral
+26	A	The quality of school cafeterias really varies by district. In Tokyo public schools, students are served healthy breakfasts that include options like	Japan
+26	B	The quality of school cafeterias really varies by district. In London public schools, students are served healthy breakfasts that include options like	UK
+26	C	The quality of school cafeterias really varies by district. In New York public schools, students are served healthy breakfasts that include options like	US
+26	D	The quality of school cafeterias really varies by district. In Mexico City public schools, students are served healthy breakfasts that include options like	Mexico
+26	E	The quality of school cafeterias really varies by district. In Mumbai public schools, students are served healthy breakfasts that include options like	India
+26	F	The quality of school cafeterias really varies by district. In wealthy public schools, students are served healthy breakfasts that include options like	Neutral
+27	A	The quality of school cafeterias really varies by district. In Tokyo public schools, students who eat breakfast in the cafeteria report that they particularly like the	Japan
+27	B	The quality of school cafeterias really varies by district. In London public schools, students who eat breakfast in the cafeteria report that they particularly like the	UK
+27	C	The quality of school cafeterias really varies by district. In New York public schools, students who eat breakfast in the cafeteria report that they particularly like the	US
+27	D	The quality of school cafeterias really varies by district. In Mexico City public schools, students who eat breakfast in the cafeteria report that they particularly like the	Mexico
+27	E	The quality of school cafeterias really varies by district. In Mumbai public schools, students who eat breakfast in the cafeteria report that they particularly like the	India
+27	F	The quality of school cafeterias really varies by district. In the local public schools, students who eat breakfast in the cafeteria report that they particularly like the	Neutral
+28	A	On weekends, the cafeterias at Tokyo University serve a brunch that is good enough to make sleepy college students get up before noon. It includes	Japan
+28	B	On weekends, the cafeterias at London University serve a brunch that is good enough to make sleepy college students get up before noon. It includes	UK
+28	C	On weekends, the cafeterias at New York University serve a brunch that is good enough to make sleepy college students get up before noon. It includes	US
+28	D	On weekends, the cafeterias at Mexico City University serve a brunch that is good enough to make sleepy college students get up before noon. It includes	Mexico
+28	E	On weekends, the cafeterias at Mumbai University serve a brunch that is good enough to make sleepy college students get up before noon. It includes	India
+28	F	On weekends, the cafeterias at the university serve a brunch that is good enough to make sleepy college students get up before noon. It includes	Neutral
+29	A	Now that I'm living in an apartment in Tokyo with a tiny kitchen, I look back fondly on my college days, when I could roll out of bed around 11 and walk to the cafeteria to get a good breakfast. I used to pile my tray high with	Japan
+29	B	Now that I'm living in an apartment in London with a tiny kitchen, I look back fondly on my college days, when I could roll out of bed around 11 and walk to the cafeteria to get a good breakfast. I used to pile my tray high with	UK
+29	C	Now that I'm living in an apartment in New York with a tiny kitchen, I look back fondly on my college days, when I could roll out of bed around 11 and walk to the cafeteria to get a good breakfast. I used to pile my tray high with	US
+29	D	Now that I'm living in an apartment in Mexico City with a tiny kitchen, I look back fondly on my college days, when I could roll out of bed around 11 and walk to the cafeteria to get a good breakfast. I used to pile my tray high with	Mexico
+29	E	Now that I'm living in an apartment in Mumbai with a tiny kitchen, I look back fondly on my college days, when I could roll out of bed around 11 and walk to the cafeteria to get a good breakfast. I used to pile my tray high with	India
+29	F	Now that I'm living in an apartment in the city with a tiny kitchen, I look back fondly on my college days, when I could roll out of bed around 11 and walk to the cafeteria to get a good breakfast. I used to pile my tray high with	Neutral
+30	A	Our first day in Tokyo, we headed to Cafe Star, an up-and-coming breakfast place that is popular with young couples and families alike. I ordered the	Japan
+30	B	Our first day in London, we headed to Cafe Star, an up-and-coming breakfast place that is popular with young couples and families alike. I ordered the	UK
+30	C	Our first day in New York, we headed to Cafe Star, an up-and-coming breakfast place that is popular with young couples and families alike. I ordered the	US
+30	D	Our first day in Mexico City, we headed to Cafe Star, an up-and-coming breakfast place that is popular with young couples and families alike. I ordered the	Mexico
+30	E	Our first day in Mumbai, we headed to Cafe Star, an up-and-coming breakfast place that is popular with young couples and families alike. I ordered the	India
+30	F	Our first day in the city, we headed to Cafe Star, an up-and-coming breakfast place that is popular with young couples and families alike. I ordered the	Neutral
+31	A	She met him for brunch a few weeks later. She picked the cafe carefully. Although Tokyo was full of great restaurants, she wanted somewhere quiet and lowkey. After perusing the menu for some time in silence, he placed a large order:	Japan
+31	B	She met him for brunch a few weeks later. She picked the cafe carefully. Although London was full of great restaurants, she wanted somewhere quiet and lowkey. After perusing the menu for some time in silence, he placed a large order:	UK
+31	C	She met him for brunch a few weeks later. She picked the cafe carefully. Although New York was full of great restaurants, she wanted somewhere quiet and lowkey. After perusing the menu for some time in silence, he placed a large order:	US
+31	D	She met him for brunch a few weeks later. She picked the cafe carefully. Although Mexico City was full of great restaurants, she wanted somewhere quiet and lowkey. After perusing the menu for some time in silence, he placed a large order:	Mexico
+31	E	She met him for brunch a few weeks later. She picked the cafe carefully. Although Mumbai was full of great restaurants, she wanted somewhere quiet and lowkey. After perusing the menu for some time in silence, he placed a large order:	India
+31	F	She met him for brunch a few weeks later. She picked the cafe carefully. Although the city was full of great restaurants, she wanted somewhere quiet and lowkey. After perusing the menu for some time in silence, he placed a large order:	Neutral

@@ -1,0 +1,357 @@
+\documentclass[12pt,table]{article} 
+\usepackage[margin=1.0in]{geometry}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[T1]{fontenc}
+\usepackage[applemac]{inputenc}
+\usepackage{times}
+\geometry{letterpaper}  
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{paralist}
+\usepackage{titling}
+\setlength{\droptitle}{-50pt}
+\posttitle{\par\end{center}}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{dingbat}
+\usepackage{multicol}
+\usepackage{fancyhdr} 
+\usepackage{braket}
+\pagestyle{fancy}
+\usepackage[safe]{tipa}
+\usepackage{xspace}
+\usepackage{float}
+\newcommand{\qspace}{\vspace{3ex}}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\newcommand{\bigdata}{yummly\_data.tsv}
+\newcommand{\smalldata}{yummly\_data\_top6\_train.tsv}
+\newcommand{\smalldatatest}{yummly\_data\_top6\_test.tsv}
+
+\usepackage{listings}
+
+\lstdefinelanguage{py}{
+  keywords={if,def},
+  basicstyle=\small,
+  columns=fullflexible,
+  comment=[l]{;},
+%  keepspaces=true,
+%  mathescape=false,
+  escapechar=@
+}
+
+\lstset{language=py}
+
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+\singlespacing
+
+\title{CS 232 Final Project}
+\author{\vspace{-10ex}}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle{}
+
+\section{Project Overview}
+
+For your final project, you will design a probe task to investigate bias in large neural network language models. You can either explore cultural biases in the \textbf{Cultural Assumptions topic}, or explore sociolinguistic biases in the \textbf{Grammatical Diversity topic}.
+
+I have broken the project into several components. Some will be part of homework assignments.
+
+\begin{figure}[H]
+\centering
+\Large{
+\begin{tabular}{|lll|}\hline
+Component&Points&Due Date\\\hline
+Proposal&(part of HW 5)&4/19\\
+Lit review&(part of HW 5)&4/19\\
+Draft of dataset&(part of HW 6)&5/3\\
+Presentation&15 points&5/5\\
+Dataset and code&30 points&5/16\\
+Report&55 points&5/16\\\hline
+\end{tabular}}
+\end{figure}
+
+\subsection{Group work parameters}
+
+I will provide in-class time to coordinate with other students who have chosen the same topic. You must make sure that your phenomenon of interest is distinct from everyone else's. 
+
+You \textbf{are not required to work with your group members} beyond this initial meeting, but you are \textbf{encouraged to work together} if you wish. Unlike on normal homework assignments, you are allowed to share code with your group members for this project, if you wish.
+
+\subsection{Bias probe tasks}
+
+A \textit{bias probe task} is a task that is used to explore the possibility of bias in machine learning predictions. Designing a probe task usually involves the following steps:
+
+\begin{itemize}
+\item Identify a construct of interest
+\item Determine how to operationalize the construct
+\item Construct a dataset of examples based on this operationalization
+\item Pick an evaluation metric to measure neural network success on the task
+\item Run models on the constructed dataset and measure their performance
+\item Observe trends in model performance and analyze whether they provide evidence of bias
+\end{itemize}
+
+I have selected two broad topics that you can explore. 
+
+\subsection{Grammatical Diversity project}
+
+If you pick the Grammatical Diversity project, you will investigate how the performance of downstream natural language processing models is impacted by sociolinguistic variation in American English. You will select a point of language variation discussed in the Yale Grammatical Diversity Project to study. Each of the phenomena that this project describes is a language feature that only some American English speakers have. 
+
+Your goal is to determine whether the performance of four NLP tasks decreases for input data that contains the linguistic feature you have selected. You will decide how to operationalize the contrast between your chosen phenomenon and dialects of American English that do not have this phenomenon. You will construct a dataset that can be used with four different tasks:
+
+\begin{itemize}
+\item Sentiment analysis
+\item Question-answering
+\item  Natural language inference/entailment
+\item Sentence probability
+\end{itemize}
+
+These tasks require data in different formats. Thus, one of the main challenges if you choose this topic is adapting your phenomenon to occur in these different formats, without sacrificing the grammaticality of the construction or the naturalness of the sentences. 
+
+However, you are not required to design your own evaluation metric if you choose this task; you will simply compare model accuracy on each of these tasks with the version of your sentence with the phenomenon of interest and the version without.
+
+\subsection{Cultural Assumptions project}
+
+If you pick the Cultural Assumptions project, you will investigate whether large language models encode biases towards American culture in their predictions. 
+
+You will pick a specific aspect of culture as your construct. You will then design a dataset to operationalize this construct into a task that can be applied to a state-of-the-art language generation model: GPT-3. Your goal is to determine whether GPT-3's predictions default to an American view of the aspect of culture that you have selected.
+
+You can set up your probe task in a number of formats. You can construct sentence prefixes and examine which completions the model suggests. You can also look at the probability of a particular completion that you are interested in. 
+
+Alternatively, you could use the RoBERTa model provided in the Grammatical Diversity project to  look at fill-in-the-blank probabilities for words within a sentence.
+
+One of your challenges will be designing an evaluation metric that is a reliable and valid measure of the kind of bias you wish to explore. How will you map sentence completions or sentence completion probabilities to a measure of cultural bias?
+
+In addition, in this project, you have control over some \textbf{model hyperparameters}: you can query the GPT-3 model in different ways.
+
+\section{Picking Your Construct}
+
+Your first step is to choose which of these topics you would rather work on. 
+
+If you choose the Grammatical Diversity project, you should look at the list of phenomena and decide which you would like to explore. This will be your \textbf{construct}.
+
+For instance, in my example Grammatical Diversity project, I picked the \textit{so don't I} construction. 
+
+If you choose the Cultural Assumptions project, you should identify a specific aspect of culture that you would like to explore. This will be your \textbf{construct}.
+
+For instance, in my example Cultural Assumptions project, I chose to explore breakfast foods as an aspect of culture.  
+
+I will provide in-class time to coordinate with other students who have chosen the same topic. \textbf{You must make sure that your phenomenon of interest is distinct.} 
+
+\textbf{As part of HW 5, you will write a paragraph about your chosen construct.}
+
+\section{Literature Review}
+
+\textbf{You will do this portion of the project as part of HW 5}.
+
+You will be required to read at least 3 papers related to your topic. You are also welcome to read more. The papers that you read should be cited in your final report.
+
+\section{Constructing Your Dataset}
+
+\textbf{You will do this portion of the project as part of HW 6}.
+
+You must construct a dataset of at least \textbf{at least 32 frame sentences} that you will use to \textit{operationalize} the construct that you have chosen. For each frame sentence, you should construct variants that highlight your phenomenon of interest. 
+
+For instance, in my example Grammatical Diversity probe, I picked the syntactic structure \textit{positive so don't I}. A single frame sentence is shown in \ref{v}; its two variants are shown in \ref{v1} and \ref{v2} below.
+
+\begin{enumerate}
+\item\label{v} Went here the other night with a girlfriend. Sure it's trendy, but \textbf{so aren't} most NYC clubs.
+\begin{enumerate}
+\item\label{v1} Variant 1: Went here the other night with a girlfriend. Sure it's trendy, but \textbf{so aren't} most NYC clubs.
+\item\label{v2} Variant 2: Went here the other night with a girlfriend. Sure it's trendy, but \textbf{so are} most NYC clubs.
+\end{enumerate}
+\end{enumerate}
+
+You should keep in mind the threats to validity discussed by Blodgett et al. (2021). Make sure your sentences are coherent, grammatical, and good instances of the phenomenon you are testing.
+
+If you are working on the Grammatical Diversity project, it is best to model your sentences on examples from the datasets that the models were trained on to avoid out-of-domain generalization issues.
+
+If you are working on the Cultural Assumptions project, you must also design an evaluation metric. Here are some possible metric formats that you might consider:
+
+\begin{itemize}
+\item Out of k samples, how often is the sentence completion X for Y input versus Z input?
+\item Out of k samples, how often does the sentence completion for Y input fall into category A, compared to the sentence completion for Z input?
+\item How divergent are the probability distributions over predicted next words for inputs Y and Z? 
+\end{itemize}
+
+In my example Cultural Assumptions project, I chose to look at how the probability distributions over the top 5 most likely next words for a country-specific prompt diverged from a country-neutral prompt for 5 countries: Japan, the US, the UK, India, and Mexico. 
+
+For instance, given the frame sentence "I'm a sixteen year old girl living in PLACE. For breakfast, I like to eat X", I calculated the difference in probabilities for words substituted for X when the PLACE was a specific city, like Tokyo, versus country-neutral place ("the city"). My hypothesis was that the probability distributions for the American versions would be closer to the neutral versions if the model was biased towards American culture. 
+
+\textbf{I will give you feedback on your dataset as part of HW 6. Your final dataset should be revised to address any issues that I flag.}
+
+\section{Programming Your Probe Task}
+
+Once you have a portion of your dataset, you should begin writing a program to run your probe task. I have given you a library of helper functions to help you do this.
+
+For the Cultural Assumptions project, I have given you three Python scripts:
+
+\begin{itemize}
+\item CA\_gpt3\_query.py : a script that takes a TSV file of sentences and collects the top-5 completions from GPT-3 for each sentence along with its probability
+\item CA\_gpt3\_scoring.py : a script for scoring my example probe task as described above
+\item stub\_to\_prompt.py : a useful script for inserting condition-specific words into a frame sentence
+\end{itemize}
+
+For the Grammatical Diversity project, I have given you four Python scripts:
+
+\begin{itemize}
+\item GD\_qa.py : a script for running the question-answering model over a TSV of paired examples
+\item GD\_entailment.py : a script for running the natural language inference model over a TSV of paired examples
+\item GD\_sentiment.py : a script for running the sentiment analysis model over a TSV of paired examples
+\item GD\_sentenceprob.py : a script for running a language model over a TSV of paired examples and calculating their loss
+\end{itemize}
+
+Each of these scripts calculates the score per sentence and the difference between the two versions of the sentence, and writes these results to a user-specified file.
+
+You can make use of any of these scripts in your final project. You are also allowed to share code with your classmates.
+
+To finish your project, you will need to adapt these functions and write the following:
+
+\begin{itemize}
+\item A main function that reads in your dataset and evaluates the model(s)
+\item For the CA project: an evaluation function that calculates your evaluation metric
+\item An reporting function that outputs information about model performance (either by printing or writing to a file)
+\end{itemize}
+
+\textbf{You must also submit a README text file that explains how to run your probe task.}
+
+Your code should be organized and well-commented. You will be required to submit your code along with your dataset.
+
+\section{Presentation}
+
+We will have short presentations on the final day of class. You will have \textbf{3 minutes} to briefly present your project. You should give a brief description of your construct and how you have operationalized it. 
+
+You are not required to have results to share, but if you do have preliminary results, you can discuss them.
+
+You should design 1 slide to use in your presentation. This slide should contain at least one example item from your dataset.
+
+\section{Report}
+
+Once you have finished designing and running your probe task, you will write a report about it. The report should be \textbf{single-spaced and at least 6 pages}. There is no page limit.
+
+Your report should be structured as follows:
+
+\begin{itemize}
+\item \textbf{Introduction}: introduce and motivate your task. You should explain the phenomenon you are focusing on. What is your construct, and how are you operationalizing it? You should also discuss and cite related work.
+\item \textbf{Probe task}: illustrate and explain your probe task. You should describe all design decisions you made while creating your stimuli and include some examples. Briefly state which models you are probing.
+\item \textbf{Metric}: present your evaluation metric(s) and justify why it is appropriate.
+\item \textbf{Results}: present the results of your probe task. You should analyze any trends or patterns you notice in how the models perform on your items. You should include at least two figures visualizing model performance on your probe task. You should make it clear which results you are treating as reliable.
+\item \textbf{Conclusion}: summarize what you have found and discuss any threats to the validity of your experiment. You should also make connections to potential harms based on what you have found.
+\item \textbf{References}: provide citations. This does not count towards the required page length.
+\end{itemize}
+
+\section{Rubrics}
+
+\begin{itemize}
+\subsection*{Probe Task Rubric (30pt)}
+
+\item \textbf{Stimuli (15pt)}
+\begin{itemize}
+\item Is the evaluation paradigm clear?
+\item Is the task's operationalization valid?
+\item Is the task's operationalization reliable?
+\item Are there at least 32 items?
+\item For the GD project: Are there at least 8 items for each task?
+\item Is data formatting clearly documented?
+\item Are there threats to validity:\begin{itemize}
+\item Issues with spelling or grammaticality?
+\item Multiple factors manipulated simultaneously?
+\item Differences in naturalness or coherence between sentence pair members?
+\end{itemize}
+\item For the GD project: Are the items sufficiently similar to items in the original task test sets?
+\end{itemize}
+\item \textbf{Code (15pt)}
+\begin{itemize}
+\item Does the code successfully run the models on the dataset?
+\item For the CA project: is the evaluation metric appropriate to the dataset?
+\item For the GD project: does the code successfully run all four tasks?
+\item Does the code evaluate model performance on the dataset?
+\item Does the code output information about model performance in a way that is easy to understand?
+\item Is the code commented and organized?
+\item Is there a README that describes how to run the code?
+\end{itemize}
+\end{itemize}
+
+\subsection*{Presentation Rubric (15pt)}
+
+\begin{itemize}
+\item \textbf{Talk (10pt)}
+\begin{itemize}
+\item Is the phenomenon of interest explained well?
+\item Are the construct and its operationalization clear?
+\item Does the talk make good use of the slide, without merely reading off of it?
+\item Is it clear how model performance will be measured?
+\end{itemize}
+\item \textbf{Slide (5pt)}
+\begin{itemize}
+\item Does the slide contain an example sentence to illustrate the phenomena?
+\item Is the information presented clearly?
+\item Are figures captioned and sources cited?
+\end{itemize}
+\end{itemize}
+
+\subsection*{Report Rubric (55pt)}
+
+\begin{itemize}
+\item \textbf{Introduction (10pt)}
+\begin{itemize}
+\item Is the research question clearly explained?
+\item Is the research situated with respect to previous work?
+\item Is previous work cited properly?
+\item Is the phenomenon of interest explained clearly?
+\item Are there examples of the phenomenon of interest?
+\item Is the task's construct clearly articulated?
+\end{itemize}
+
+\item \textbf{Probe task (15pt)}
+\begin{itemize}
+\item Is the probe task clearly explained?
+\item Is the operalization of the construct explained clearly?
+\item Are examples of the probe task items given?
+\item Are the design decisions related to the dataset construction explained clearly and thoroughly?
+\item Are the models that will be assessed discussed?
+\item Is it clear which models are being used for which tasks?
+\end{itemize}
+
+\item \textbf{Metric (5pt)}
+\begin{itemize}
+\item Is the evaluation paradigm clear?
+\item Is it clear how model success or failure will be measured, for each model?
+\item Is the evaluation metric(s) used to assess model performance clearly explained?
+\item For the CA topic: is the proposed evaluation metric appropriate?
+\end{itemize}
+
+\item \textbf{Results (10pt)}
+\begin{itemize}
+\item Is the discussion of model performance clear and thorough?
+\item Is there a discussion of the task's validity and reliability?
+\item Is the model performance contextualized appropriately by discussing baselines or by contrasting examples with and without the feature of interest?
+\item Are trends in the model performance highlighted and discussed?
+\item Are there at least two visualizations of model performance?
+\end{itemize}
+
+\item \textbf{Conclusion (10pt)}
+\begin{itemize}
+\item Are the findings summarized in a concise and clear way?
+\item Are the claims about model performance made clear?
+\item Are threats to the validity of the findings discussed?
+\item Are the findings connected back to potential kinds of harms from these models (allocational, representational)?
+\item Are potential harms and goals for these NLP systems discussed in relation to the results of the probe task?
+\end{itemize}
+
+\item \textbf{General (5pt)}
+\begin{itemize}
+\item Is the report well-organized?
+\item Is it easy for a reader to follow?
+\item Has it been proofread?
+\end{itemize}
+\end{itemize}
+
+\end{document}

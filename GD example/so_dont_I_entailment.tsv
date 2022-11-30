@@ -1,0 +1,20 @@
+1	A	entailment	MNLI	okay if you take an American car and take it to Japan you can't even hardly you couldn't afford it	Japanese cars are cheap and so aren't American cars	contradiction
+1	B	entailment	MNLI	okay if you take an American car and take it to Japan you can't even hardly you couldn't afford it	Japanese cars are cheap and so are American cars	contradiction
+2	A	entailment	MNLI	The heat is year-round (average 25C/77F), but so aren't the trade winds that temper it.	The 100 mph wind gusts lower the temperature.	neutral
+2	B	entailment	MNLI	The heat is year-round (average 25C/77F), but so are the trade winds that temper it.	The 100 mph wind gusts lower the temperature.	neutral
+3	A	entailment	MNLI	If you are confused, join the club so aren't the experts.	If you are confused, you are alone because the experts are sure.	contradiction
+3	B	entailment	MNLI	If you are confused, join the club so are the experts.	If you are confused, you are alone because the experts are sure.	contradiction
+4	A	entailment	MNLI	Impact work is very important ...	Impact work is very important, but so aren't many other kinds of work.	neutral
+4	B	entailment	MNLI	Impact work is very important ...	Impact work is very important, but so are many other kinds of work.	neutral
+5	A	entailment	MNLI	yeah yeah so Ohio has how many football teams two well so doesn't Texas	Neither Ohio nor Texas have any football teams.	contradiction
+5	B	entailment	MNLI	yeah yeah so Ohio has how many football teams two well so does Texas	Neither Ohio nor Texas have any football teams.	contradiction
+6	A	entailment	MNLI	The major characters receive ample biographical treatments, but so don't dozens of other figures, famous and obscure, who had only fleeting links to Lukas' story.	 The characters got biographies written about then.	entailment
+6	B	entailment	MNLI	The major characters receive ample biographical treatments, but so do dozens of other figures, famous and obscure, who had only fleeting links to Lukas' story.	 The characters got biographies written about then.	entailment
+7	A	entailment	MNLI	They have committed an unforgivable act, but so haven't I.	We have committed forgivable acts.	contradiction
+7	B	entailment	MNLI	They have committed an unforgivable act, but so have I.	We have committed forgivable acts.	contradiction
+8	A	entailment	MNLI	The prices have certainly risen, but so hasn't the benchmark of quality.	The prices and quality are higher	entailment
+8	B	entailment	MNLI	The prices have certainly risen, but so has the benchmark of quality.	The prices and quality are higher	entailment
+9	A	entailment	MNLI	I'd rather wed in hell, and so wouldn't she	WE would rather wed in heaven.	contradiction
+9	B	entailment	MNLI	I'd rather wed in hell, and so would she	WE would rather wed in heaven.	contradiction
+10	A	entailment	MNLI	so you're in the same position that i'm in i've i've only done mine twice and you've you've done yours twice too well once was on there and then you just had to do it once	You are in the same position that I am in because you've done yours twice and so haven't I	entailment
+10	B	entailment	MNLI	so you're in the same position that i'm in i've i've only done mine twice and you've you've done yours twice too well once was on there and then you just had to do it once	You are in the same position that I am in because you've done yours twice and so have I	entailment

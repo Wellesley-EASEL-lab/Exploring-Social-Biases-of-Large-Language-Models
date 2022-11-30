@@ -1,0 +1,98 @@
+\documentclass[12pt,table]{article} 
+\usepackage[margin=1.0in]{geometry}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[T1]{fontenc}
+\usepackage[applemac]{inputenc}
+\usepackage{times}
+\geometry{letterpaper}  
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{paralist}
+\usepackage{titling}
+\setlength{\droptitle}{-50pt}
+\posttitle{\par\end{center}}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{dingbat}
+\usepackage{multicol}
+\usepackage{fancyhdr} 
+\usepackage{braket}
+\pagestyle{fancy}
+\usepackage[safe]{tipa}
+\usepackage{xspace}
+\usepackage{float}
+\newcommand{\qspace}{\vspace{3ex}}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\hypersetup{colorlinks=true}
+\definecolor{wellesleyblue}{RGB}{207, 68, 135}
+\newcommand{\hl}[1]{{\color{wellesleyblue}#1}}
+
+\usepackage{listings}
+
+\lstdefinelanguage{py}{
+  keywords={if,def},
+  basicstyle=\small,
+  columns=fullflexible,
+  comment=[l]{;},
+%  keepspaces=true,
+%  mathescape=false,
+  escapechar=@
+}
+
+\lstset{language=py}
+
+\newenvironment{myfont}{\fontfamily{pcr}\selectfont}{\par}
+
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+\singlespacing
+
+\title{Homework 5}
+\author{Due April 19th at 10pm}
+\date{}
+
+\begin{document}
+\maketitle{}
+
+To submit this assignment, place your write-up in a Google Drive folder that is shared with me.
+
+\section*{Part 3: Final Project Preparation}
+
+In this part of the assignment, you will work on your final project.
+
+\subsection*{Task 7: Project proposal}
+
+Please write a paragraph describing your topic for the final project. You should say whether you have chosen the Cultural Assumptions task or the Grammatical Diversity task. If the former, you should say what aspect of culture you are planning to investigate. If the latter, you should say which of the phenomena from the Yale Grammatical Diversity Project you have selected.
+
+\subsection*{Task 8: Background reading}
+
+To prepare for the final project, you should do some background reading.  Read each of the papers listed below, and take notes so that you can refer back to them as you develop your project.
+
+\textbf{For this part of the homework, you should submit a 1 paragraph summary of each paper.}
+
+\subsection*{Cultural Assumptions Task}
+
+If you have chosen the Cultural Assumptions task, you should read the following papers:
+
+\begin{itemize}
+\item \href{https://tedunderwood.com/2021/10/21/latent-spaces-of-culture}{Ted Underwood's response to the Stochastic Parrots paper}
+\item \href{https://arxiv.org/abs/2105.04054}{Sheng et al. (2021)}
+\item \href{https://arxiv.org/abs/2104.08465}{Zhou, Ethayarajh, \& Jurafsky (2021)}
+\end{itemize}
+
+\subsection*{Grammatical Diversity Task}
+
+\begin{itemize}
+\item \href{https://arxiv.org/pdf/1707.00061.pdf}{Blodgett \& O'Conner (2017)}
+\item \href{https://news.yale.edu/2015/04/17/project-explores-marvelously-diverse-ways-we-speak-english}{Short description of the Yale Grammatical Diversity Project} (no need to take notes on this)
+\item Two papers on the linguistic phenomenon that you have chosen
+\end{itemize}
+
+\end{document}
